@@ -7,8 +7,8 @@ savepath = 'D:/WestbrueckData/Pre-processing/'
 os.chdir('D:/WestbrueckData/Pre-processing/')
 
 # 26 participants with 5x30min VR training less than 30% data loss
-#part_list = [1004, 1005, 1008, 1010, 1011, 1013, 1017, 1018, 1019, 1021, 1022, 1023, 1054, 1055, 1056, 1057, 1058, 1068, 1069, 1072, 1073, 1074, 1075, 1077, 1079, 1080]
-part_list = [1004]
+part_list = [1004, 1005, 1008, 1010, 1011, 1013, 1017, 1018, 1019, 1021, 1022, 1023, 1054, 1055, 1056, 1057, 1058, 1068, 1069, 1072, 1073, 1074, 1075, 1077, 1079, 1080]
+#part_list = [1004]
 
 global_pos_data_df = pd.DataFrame(columns=['hitObjectColliderName','hitObjectColliderBoundsCenter_x','hitObjectColliderBoundsCenter_y','hitObjectColliderBoundsCenter_z'])
 
