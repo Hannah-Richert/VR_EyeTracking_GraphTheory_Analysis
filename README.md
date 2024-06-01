@@ -1,4 +1,4 @@
-# Graph Analysis on Eye-Tracking Data of VR City Exploration <be> Bsc-Thesis Repository
+# Graph Analysis on Eye-Tracking Data of VR City Exploration <br> Bsc-Thesis Repository
 
 This is a repository belonging to a Bsc-Thesis at the Neurobiopsychology Group at the University of Osnabrück with the title:
 "Exploratory Analysis of Visual Behavior During Free Exploration of a Large-Scale VR Environment Using a Graph-Theoretical Framework to Identify Characteristics and Differences in Spatial Exploration"
