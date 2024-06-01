@@ -37,4 +37,21 @@ This folder contains 2 short files, with whom can create and measure a single gr
 <br> They are from an earlier stage in the thesis-process and are simpler than the script of 1.4 (logic and measures might differ).
 
 
-## 2. Data Analysis
+## 2. Data Analysis & Plotting
+
+### 2.0 Utils-Files [analysis_plotting_functions.py]
+
+### 2.1 Graph Growth Analysis [growth_analysis.py]
+
+### 2.2 Graph Structure Analysis [diameter_analysis.py;avgpath_analysis.py; growth_analysis.py]
+
+### 2.3 Spatial Knowledge Performance Analysis [performance_global_features.py; performance_lm.py]
+
+### 2.4 Graph Feature Complexity Analysis [pca.py]
+
+### 2.5 Graph Hierarchy/Landmark Analysis [hierarchy_analysis.py; lm_analysis.py]
+
+### 2.6 Drawing Graph [draw_graph.py]
+
+
+
