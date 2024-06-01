@@ -39,7 +39,8 @@ This folder contains 2 short files, with which one can create and measure a sing
 
 ## 2. Data Analysis & Plotting [.../graph_analysis/...]
 
-#### 2.0 Utils-Files [analysis_plotting_functions.py]
+#### 2.0 Plotting Functions [analysis_plotting_functions.py]
+This script entails plotting functions, used in multiple scripts (2.1-2.5). It is not complete, some plotting-code is directly in the respective script.
 
 #### 2.1 Graph Growth Analysis [growth_analysis.py]
 
