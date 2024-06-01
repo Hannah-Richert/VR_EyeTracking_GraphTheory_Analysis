@@ -30,10 +30,11 @@ In this step, the data samples are divided into time segments; an added column i
 #### 1.4 Graph Creation [Step3_temp_graph_development.py; graph_measure_functions.py]
 In the third step, multiple network graphs are created from the gazes and their properties are saved.
 <br> The functions of the graph measures are stored in a separate file.
+<br> The saved values are the basis for the analysis.
 
-The saved values are the basis for the analysis.
-
-### 1.5 Additional Files[]
+### 1.5 Additional Files [.../graph_creation/additional/...]
+This folder contains 2 short files, with whom can create and measure a single graph snapchot either from  '.mat' (before 1.1) or '.csv' data files.
+<br> They are from an earlier stage in the thesis-process and are simpler than the script of 1.4 (logic and measures might differ).
 
 
 ## 2. Data Analysis
