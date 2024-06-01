@@ -37,30 +37,36 @@ This folder contains 2 short files, with which one can create and measure a sing
 <br> They are from an earlier stage in the thesis-process and are simpler than the script of 1.4 (logic and measures might differ).
 
 
-## 2. Data Analysis & Plotting [.../graph_analysis/...]
+## 2. Data Analysis & Visualisation [.../graph_analysis/...]
 
 #### 2.0 Plotting Functions [analysis_plotting_functions.py]
 This script entails plotting functions, used in multiple scripts (2.1-2.5). It is not complete, some plotting-code is directly in the respective script.
 
 #### 2.1 Graph Growth Analysis [growth_analysis.py]
+Analysis of the gaze-graphs' growth properties (Nodes, Edges, Exploration Rate, Discovery Rate), also in context with the diamater of the gaze-graphs.
 
 #### 2.2 Graph Structure Analysis [diameter_analysis.py;avgpath_analysis.py; growth_analysis.py]
+Analysis of the gaze-graphs' diameter and average shortest path properties.
 
 #### 2.3 Spatial Knowledge Performance Analysis [performance_global_features.py; performance_lm.py]
+!!!
 
-#### 2.4 Graph Feature Complexity Analysis [pca.py]
+#### 2.4 Principle Component Analysis [pca.py]
+Analysis of the complexity of differences in gaze-graph features across participants.
 
 #### 2.5 Graph Hierarchy/Landmark Analysis [hierarchy_analysis.py; lm_analysis.py]
+!!!
 
 #### 2.6 Drawing Graph [draw_graph.py]
+Drawing of the graphs (nodes, edges) on a background image representing a map of the VR city.
 
 
 ## 3. Additional Files
 
 #### Requirements [requirements.txt]
-Entails the Python packages, which need to be installed to run all scripts
+This entails the Python packages, needed to run all scripts
 
 #### Color Codes [color_codes.txt]
-Entails the main colors used in the figures.
+This entails the main colors used in the figures.
 
 
