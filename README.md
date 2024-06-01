@@ -32,26 +32,34 @@ In the third step, multiple network graphs are created from the gazes and their 
 <br> The functions of the graph measures are stored in a separate file.
 <br> The saved values are the basis for the analysis.
 
-### 1.5 Additional Files [.../graph_creation/additional/...]
-This folder contains 2 short files, with whom can create and measure a single graph snapchot either from  '.mat' (before 1.1) or '.csv' data files.
+#### 1.5 Additional Files [.../graph_creation/additional/...]
+This folder contains 2 short files, with which one can create and measure a single graph snapshot from '.mat' (before 1.1) or '.csv' data files.
 <br> They are from an earlier stage in the thesis-process and are simpler than the script of 1.4 (logic and measures might differ).
 
 
-## 2. Data Analysis & Plotting
+## 2. Data Analysis & Plotting [.../graph_analysis/...]
 
-### 2.0 Utils-Files [analysis_plotting_functions.py]
+#### 2.0 Utils-Files [analysis_plotting_functions.py]
 
-### 2.1 Graph Growth Analysis [growth_analysis.py]
+#### 2.1 Graph Growth Analysis [growth_analysis.py]
 
-### 2.2 Graph Structure Analysis [diameter_analysis.py;avgpath_analysis.py; growth_analysis.py]
+#### 2.2 Graph Structure Analysis [diameter_analysis.py;avgpath_analysis.py; growth_analysis.py]
 
-### 2.3 Spatial Knowledge Performance Analysis [performance_global_features.py; performance_lm.py]
+#### 2.3 Spatial Knowledge Performance Analysis [performance_global_features.py; performance_lm.py]
 
-### 2.4 Graph Feature Complexity Analysis [pca.py]
+#### 2.4 Graph Feature Complexity Analysis [pca.py]
 
-### 2.5 Graph Hierarchy/Landmark Analysis [hierarchy_analysis.py; lm_analysis.py]
+#### 2.5 Graph Hierarchy/Landmark Analysis [hierarchy_analysis.py; lm_analysis.py]
 
-### 2.6 Drawing Graph [draw_graph.py]
+#### 2.6 Drawing Graph [draw_graph.py]
 
+
+## 3. Additional Files
+
+#### Requirements [requirements.txt]
+Entails the Python packages, which need to be installed to run all scripts
+
+#### Color Codes [color_codes.txt]
+Entails the main colors used in the figures.
 
 
