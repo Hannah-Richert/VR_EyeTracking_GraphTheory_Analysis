@@ -70,5 +70,5 @@ This entails the main colors used in the figures.
 
 ## 4. References
 [1] Schmidt V, König SU, Dilawar R, Sánchez Pacheco T, König P. Improved Spatial Knowledge Acquisition through Sensory Augmentation. Brain Sciences. 2023; 13(5):720. https://doi.org/10.3390/brainsci13050720
-<br> [2] Walter JL. VR-EyeTracking-GraphTheory. GitHub. 2022. Available from: https://github.com/JasminLWalter/VR-EyeTracking-GraphTheory, Accessed 2024 Jun 2.
+<br> [2] Walter JL. VR-EyeTracking-GraphTheory. GitHub. 2022. Available from: https://github.com/JasminLWalter/VR-EyeTracking-GraphTheory, Accessed 2024 Feb 25.
 
