@@ -10,7 +10,7 @@ This readme will provide rough documentation about the files' structure and purp
 
 ## 0. Data Origin
 
-The raw eye-tracking data stems from an experiment by Schmidt et al. (2023) [1].
+The raw eye-tracking data stems from an experiment by Schmidt et al. (2023) [1] in a VR City environment called "Westbrook".
 It was further processed by a pipeline by J.L. Walter (2022) [2]. 
 The resulting data are "gazes" of participants, saved in Matlab format.
 
@@ -70,5 +70,5 @@ This entails the main colors used in the figures.
 
 ## 4. References
 [1] Schmidt V, König SU, Dilawar R, Sánchez Pacheco T, König P. Improved Spatial Knowledge Acquisition through Sensory Augmentation. Brain Sciences. 2023; 13(5):720. https://doi.org/10.3390/brainsci13050720
-[2] Walter JL. VR-EyeTracking-GraphTheory. GitHub. 2022. Available from: https://github.com/JasminLWalter/VR-EyeTracking-GraphTheory, Accessed 2024 Jun 2.
+<br> [2] Walter JL. VR-EyeTracking-GraphTheory. GitHub. 2022. Available from: https://github.com/JasminLWalter/VR-EyeTracking-GraphTheory, Accessed 2024 Jun 2.
 
