@@ -3,15 +3,15 @@
 This is a repository belonging to a BSc-Thesis at the Neurobiopsychology Group at the University of Osnabrück with the title:
 "Exploratory Analysis of Visual Behavior During Free Exploration of a Large-Scale VR Environment Using a Graph-Theoretical Framework to Identify Characteristics and Differences in Spatial Exploration"
 
-Contact for further details about the thesis or any script: Hannah Richert hrichert@uos.de [Don't hesitate to contact ;)]
+Contact for further details about the thesis or any script: Hannah Richert hrichert@uos.de [Don't hesitate to reach out ;)]
 
 This readme will provide rough documentation about the files' structure and purpose, with further documentation at the beginning of each file itself.
 
 
 ## 0. Data Origin
 
-The raw Eye-tracking data stems from an experiment by Schmidt et al. (2022) [1]
-It was further processed by a pipeline by Jasmin L. Walter (2022) [2] 
+The raw eye-tracking data stems from an experiment by Schmidt et al. (2023) [1].
+It was further processed by a pipeline by J.L. Walter (2022) [2]. 
 The resulting data are "gazes" of participants, saved in Matlab format.
 
 
@@ -63,12 +63,12 @@ Drawing of the graphs (nodes, edges) on a background image representing a map of
 ## 3. Additional Files
 
 #### Requirements [requirements.txt]
-This entails the Python packages, needed to run all scripts
+This entails the Python packages needed to run all scripts
 
 #### Color Codes [color_codes.txt]
 This entails the main colors used in the figures.
 
 ## 4. References
-[1]
-[2] Github: https://github.com/JasminLWalter/VR-EyeTracking-GraphTheory
+[1] Schmidt V, König SU, Dilawar R, Sánchez Pacheco T, König P. Improved Spatial Knowledge Acquisition through Sensory Augmentation. Brain Sciences. 2023; 13(5):720. https://doi.org/10.3390/brainsci13050720
+[2] Walter JL. VR-EyeTracking-GraphTheory. GitHub. 2022. Available from: https://github.com/JasminLWalter/VR-EyeTracking-GraphTheory, Accessed 2024 Jun 2.
 
