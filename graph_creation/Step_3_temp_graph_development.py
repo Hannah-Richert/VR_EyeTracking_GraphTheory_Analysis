@@ -180,8 +180,7 @@ if __name__ == "__main__": # savety measure to only be executet if the file is c
             graph.remove_nodes_from(nodes_to_remove_existing)
 
             #save graph of the first paticipants at certain instances for later plotting of example graph snapchots
-            if part == 1004 and i & 10 == 0:
-                print(i)
+            if part == 1004 and i % 10 == 0:
                 nx.write_graphml(graph, f'{save_dir}{part}_{i}_step_graph.graphml')
 
 

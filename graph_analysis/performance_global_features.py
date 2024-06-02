@@ -32,7 +32,7 @@ warnings.simplefilter(action='ignore', category=DeprecationWarning)
 
 ################################### 0. Adjustable variables ###################################
 
-savepath = 'D:/WestbrueckData/Analysis/Plots/performance/'
+savepath = 'D:/WestbrueckData/Analysis/Plots300/performance/'
 os.chdir('D:/WestbrueckData/Analysis/')
 
 # 26 participants with 5x30min VR training less than 30% data loss
@@ -49,7 +49,7 @@ save_dpi = 300 #600
 
 ################################### 1. Load and transform data ###################################
 
-dataPerformance = pd.read_csv("Performance/overviewPerformance.csv")
+dataPerformance = pd.read_csv("Performance_data/overviewPerformance.csv")
 
 dataGraphMeasures =  pd.read_csv('parts_summary_stats.csv')
 
@@ -65,13 +65,13 @@ dataGraphM.drop(['Participants','ParticipantID'],  axis=1, inplace=True)
 ################################### 2. Plotting MeanPerformance Distribution ###################################
 
 # gloabal settings for all figures
-mpl.rcParams.update({'font.size': 14,  # for normal text
-                     'axes.labelsize': 16,  # for axis labels
+mpl.rcParams.update({'font.size': 16,  # for normal text
+                     'axes.labelsize': 13,  # for axis labels
                      'axes.titlesize': 16,  # for title
                      'xtick.labelsize': 14,  # for x-axis tick labels
                      'ytick.labelsize': 14})  # for y-axis tick labels
 
-plt.figure(figsize=(4, 4))
+plt.figure(figsize=(4, 5))
 
 # Create the box plot
 sns.boxplot(data=dataGraphM['meanPerformance'], color='#103F71', boxprops=dict(alpha=0.6))
@@ -81,7 +81,7 @@ sns.swarmplot(data=dataGraphM['meanPerformance'], color='#103F71', size=8)
 # Remove x-axis tick labels
 plt.gca().set_xticklabels([])
 # Add title and labels
-plt.title("Distribution of Participant's Avg. Performance")
+#plt.title("Distribution of Participant's Avg. Performance")
 plt.xlabel('Participants')
 plt.ylabel('Mean Task Performance Error [Angular degrees]')
 

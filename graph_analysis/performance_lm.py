@@ -36,7 +36,7 @@ part_list = [1004, 1005, 1008, 1010, 1011, 1013, 1017, 1018, 1019, 1021,
 
 ################################### 1. Load and transform data ###################################
 
-dataPerformance = pd.read_csv("Performance/overviewPerformance.csv")
+dataPerformance = pd.read_csv("Performance_data/overviewPerformance.csv")
 
 dataGraphLM =  pd.read_csv('end_lm.csv')
 

@@ -117,7 +117,6 @@ if __name__ == "__main__": # only execute if file is called directly not as a mo
 
         # Keep only relevant columns 
         segmented_df = segmented_df[['hitObjectColliderName','segment','firstTimeStamp']]
-        print(segmented_df['segment'].unique())
         
         # Save the data
         output_path = os.path.join(save_dir, f'{part}_segmented_gaze_data_WB.csv')

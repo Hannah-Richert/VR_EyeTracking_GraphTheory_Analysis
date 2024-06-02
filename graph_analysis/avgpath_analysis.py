@@ -42,7 +42,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 ################################### 0. Adjustable variables ###################################
 
-savepath = 'D:/WestbrueckData/Analysis/Plots/avgshortestpath_final/'
+savepath = 'D:/WestbrueckData/Analysis/Plots600/avgshortestpath/'
 summary_file_path = 'D:/WestbrueckData/Analysis/parts_summary_stats.csv'  
 
 os.chdir('D:/WestbrueckData/Analysis/')
@@ -55,7 +55,7 @@ part_list = [1004, 1005, 1008, 1010, 1011, 1013, 1017, 1018, 1019, 1021, 1022, 1
 examples_idx = [5,9,14]
 
 # resolution of the saved figure 
-save_dpi = 300 #600 
+save_dpi = 600 #600 
 
 
 
@@ -137,10 +137,10 @@ new_saved_measures.to_csv(summary_file_path, index=False)
 
 # gloabal settings for all figures
 mpl.rcParams.update({'font.size': 16,  # for normal text
-                     'axes.labelsize': 16,  # for axis labels
+                     'axes.labelsize': 18,  # for axis labels
                      'axes.titlesize': 16,  # for title
-                     'xtick.labelsize': 14,  # for x-axis tick labels
-                     'ytick.labelsize': 14})  # for y-axis tick labels
+                     'xtick.labelsize': 15,  # for x-axis tick labels
+                     'ytick.labelsize': 15})  # for y-axis tick labels
 
 
 

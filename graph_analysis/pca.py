@@ -34,7 +34,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 ################################### 0. Adjustable variables ###################################
 
-savepath = 'D:/WestbrueckData/Analysis/Plots/pca/'
+savepath = 'D:/WestbrueckData/Analysis/Plots300/pca/'
 os.chdir('D:/WestbrueckData/Analysis/')
 
 # 26 participants with 5x30min VR training less than 30% data loss
@@ -62,10 +62,10 @@ dataGraphMeasures = dataGraphMeasures[['MeanDiameter', 'EndDiameter', 'MaxDiamet
 
 # gloabal settings for all figures
 mpl.rcParams.update({'font.size': 16,  # for normal text
-                     'axes.labelsize': 16,  # for axis labels
+                     'axes.labelsize': 18,  # for axis labels
                      'axes.titlesize': 16,  # for title
-                     'xtick.labelsize': 14,  # for x-axis tick labels
-                     'ytick.labelsize': 14})  # for y-axis tick labels
+                     'xtick.labelsize': 15,  # for x-axis tick labels
+                     'ytick.labelsize': 15})  # for y-axis tick labels
 
 
 
@@ -83,7 +83,7 @@ principal_components = pca.fit_transform(X_std)
 
 # Plot PCA
 plt.figure(figsize=(10, 6))
-plt.scatter(principal_components[:, 0], principal_components[:, 1], c='#103F71', alpha=1)
+plt.scatter(principal_components[:, 0], principal_components[:, 1], c='#103F71', alpha=1, s=50)
 #plt.title('PCA with 11 features')
 plt.xlabel('Principal Component 1')
 plt.ylabel('Principal Component 2')

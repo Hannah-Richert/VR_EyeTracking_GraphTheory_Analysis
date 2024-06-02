@@ -22,7 +22,7 @@ import matplotlib.pyplot as plt
 
 ################################### 0. Adjustable variables ###################################
 
-savepath = 'D:/WestbrueckData/Analysis/Plots/'
+savepath = 'D:/WestbrueckData/Analysis/Plots600/'
 pos_path = 'D:/WestbrueckData/Pre-processing/'
 os.chdir('D:/WestbrueckData/Analysis/')
 
@@ -31,7 +31,7 @@ os.chdir('D:/WestbrueckData/Analysis/')
 part_id = 1004 # particiapntID
 
 # resolution of the saved figure 
-save_dpi = 300 #600 
+save_dpi = 600 #600 
 
 
 ################################### 1. Load and transform data ###################################
@@ -62,7 +62,7 @@ for i in [10,70,149]: # [0,10,20,30,40,50,60,70,80,90,100,110,120,130,140,149]:
                      pos = node_data, 
                      with_labels = False, 
                      node_size = 9,
-                     width = 0.9,
+                     width = 0.95,
                      node_color = '#103F71',
                      edge_color = '#6555CB')
 

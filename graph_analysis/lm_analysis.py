@@ -40,9 +40,9 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 ################################### 0. Adjustable variables ###################################
 
-savepath = 'D:/WestbrueckData/Analysis/Plots/lm_final/'
+savepath = 'D:/WestbrueckData/Analysis/Plots300/lm/'
 node_pos_path = 'D:/WestbrueckData/Pre-processing/'
-summary_file_path = 'D:/WestbrueckData/Analysis/parts_summary_stats.csv'
+summary_file_path = 'D:/WestbrueckData/Analysis/'
 
 os.chdir('D:/WestbrueckData/Analysis/')
 
@@ -169,7 +169,7 @@ for i, part in enumerate((part_list)):
 # Check if the file exists
 if os.path.exists(summary_file_path):
     # Load existing file
-    saved_measures = pd.read_csv(summary_file_path)
+    saved_measures = pd.read_csv(f'{summary_file_path}parts_summary_stats.csv')
 
     
     # Identify columns that don't already exist in the merged DataFrame
@@ -182,7 +182,7 @@ else:
     new_saved_measures = parts_sum_measures
 
 # Save the updated DataFrame to the file
-new_saved_measures.to_csv(summary_file_path, index=False)
+new_saved_measures.to_csv(f'{summary_file_path}parts_summary_stats.csv', index=False)
 
 
 
@@ -192,10 +192,10 @@ new_saved_measures.to_csv(summary_file_path, index=False)
 
 # gloabal settings for all figures
 mpl.rcParams.update({'font.size': 16,  # for normal text
-                     'axes.labelsize': 16,  # for axis labels
+                     'axes.labelsize': 18,  # for axis labels
                      'axes.titlesize': 16,  # for title
-                     'xtick.labelsize': 14,  # for x-axis tick labels
-                     'ytick.labelsize': 14})  # for y-axis tick labels
+                     'xtick.labelsize': 15,  # for x-axis tick labels
+                     'ytick.labelsize': 15})  # for y-axis tick labels
 
 
 
@@ -258,7 +258,7 @@ plt.show()
 
 
 
-################################### 4.3. Building Status on the WB Map ###################################
+################################### 4.3. Building Status on the Westbrook Map ###################################
 
 # load data
 wb_image = plt.imread('map_natural_500mMarker.png') 
@@ -289,7 +289,7 @@ for i, category in enumerate([0,1,2,3]):
     category_data = node_data[node_data['LM_category'] == category]
     plt.scatter(category_data['pos_x'], category_data['pos_z'], 
                 c=colors[i], marker=markers[i], 
-                s=42, alpha=1, label=labels[i], edgecolor= '#103F71')
+                s=44, alpha=1, label=labels[i], edgecolor= '#103F71')
     
 # Create a scatter plot
 #plt.scatter(node_data['pos_x'], node_data['pos_z'], c=node_data['LM_category'].map(color_mapping),  s=40, alpha=1, edgecolor='#00008B')
@@ -314,13 +314,12 @@ plt.show()
 sorted_df = parts_sum_measures.sort_values(by='CommonLM')
 sorted_df.index = sorted_df['ParticipantID']
 
-print(sorted_df[['CommonLM','IndivLM']].index)
 
 categorical_stacked_barplot(sorted_df[['CommonLM','IndivLM']],
                             x_label = 'ParticipantID',
                             y_label = 'Count',
                             colours = ['#179999','#6555CB'],
-                            fig_title = 'Amount of Global and Individual Landmarks per Participant',
+                            fig_title = None, #'Amount of Global and Individual Landmarks per Participant',
                             savepath = savepath + f'Part_lm_dist',
                             show = True,
                             save_dpi = save_dpi)
@@ -342,8 +341,6 @@ for col1 in ['EndDiameter',]:
             for i in [(7,8),(8,9),(9,7)]:
                 a,b = i
                 print(a,b)
-                print(parts_sum_measures[parts_sum_measures['EndDiameter']==a][col2],
-                                parts_sum_measures[parts_sum_measures['EndDiameter']==b][col2])
                 t_stat, p_value = ttest_ind(parts_sum_measures[parts_sum_measures['EndDiameter']==a][col2].astype(int),
                                             parts_sum_measures[parts_sum_measures['EndDiameter']==b][col2].astype(int))
 
@@ -365,7 +362,6 @@ for col1 in ['EndDiameter',]:
             sns.boxplot(x=parts_sum_measures[col1], y= parts_sum_measures[col2].astype(float), palette=['#103F71','#179999','#E1A315'])
            
             # Customize labels and title
-            plt.legend()
             plt.xlabel(f'{col1}')
             plt.ylabel(f'{col2}')
             #plt.title(f'Relationship {col1} and {col2}')
