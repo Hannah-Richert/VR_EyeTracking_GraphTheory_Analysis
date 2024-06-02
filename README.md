@@ -3,16 +3,15 @@
 This is a repository belonging to a BSc-Thesis at the Neurobiopsychology Group at the University of Osnabrück with the title:
 "Exploratory Analysis of Visual Behavior During Free Exploration of a Large-Scale VR Environment Using a Graph-Theoretical Framework to Identify Characteristics and Differences in Spatial Exploration"
 
-Contact for further details about the thesis or any script: Hannah Richert hrichert@uos.de
+Contact for further details about the thesis or any script: Hannah Richert hrichert@uos.de [Don't hesitate to contact ;)]
 
 This readme will provide rough documentation about the files' structure and purpose, with further documentation at the beginning of each file itself.
 
 
 ## 0. Data Origin
 
-The raw Eye-tracking data stems from an experiment by Schmidt et al. (2022):
-It was further processed by a pipeline by Jasmin Walter: Github:
-
+The raw Eye-tracking data stems from an experiment by Schmidt et al. (2022) [1]
+It was further processed by a pipeline by Jasmin L. Walter (2022) [2] 
 The resulting data are "gazes" of participants, saved in Matlab format.
 
 
@@ -33,8 +32,8 @@ In the third step, multiple network graphs are created from the gazes and their 
 <br> The saved values are the basis for the analysis.
 
 #### 1.5 Additional Files [.../graph_creation/additional/...]
-This folder contains 2 short files, with which one can create and measure a single graph snapshot from '.mat' (before 1.1) or '.csv' data files.
-<br> They are from an earlier stage in the thesis-process and are simpler than the script of 1.4 (logic and measures might differ).
+This folder contains two short files, with which one can create and measure a single graph snapshot from '.mat' (before 1.1) or '.csv' data files.
+<br> They are from an earlier stage in the thesis process and are simpler than the script of 1.4 (logic and measures might differ).
 
 
 ## 2. Data Analysis & Visualisation [.../graph_analysis/...]
@@ -46,16 +45,16 @@ This script entails plotting functions, used in multiple scripts (2.1-2.5). It i
 Analysis of the gaze-graphs' growth properties (Nodes, Edges, Exploration Rate, Discovery Rate), also in context with the diamater of the gaze-graphs.
 
 #### 2.2 Graph Structure Analysis [diameter_analysis.py;avgpath_analysis.py; growth_analysis.py]
-Analysis of the gaze-graphs' diameter and average shortest path properties.
+Analysis of the gaze-graphs' diameter and average shortest path properties
 
-#### 2.3 Spatial Knowledge Performance Analysis [performance_global_features.py; performance_lm.py]
-!!!
-
-#### 2.4 Principle Component Analysis [pca.py]
+#### 2.3 Principle Component Analysis [pca.py]
 Analysis of the complexity of differences in gaze-graph features across participants.
 
-#### 2.5 Graph Hierarchy/Landmark Analysis [hierarchy_analysis.py; lm_analysis.py]
-!!!
+#### 2.4 Graph Hierarchy/Landmark Analysis [hierarchy_analysis.py; lm_analysis.py]
+Analysis of the hierarchy of the node degree-distribution in the graphs, and also gaze-graph-defined landmarks, erived from the hierarchy.
+
+#### 2.5 Spatial Knowledge Performance Analysis [performance_global_features.py; performance_lm.py]
+Analysis of the correlation of graph properties to the spatial knowledge performance of participants.
 
 #### 2.6 Drawing Graph [draw_graph.py]
 Drawing of the graphs (nodes, edges) on a background image representing a map of the VR city.
@@ -69,4 +68,7 @@ This entails the Python packages, needed to run all scripts
 #### Color Codes [color_codes.txt]
 This entails the main colors used in the figures.
 
+## 4. References
+[1]
+[2] Github: https://github.com/JasminLWalter/VR-EyeTracking-GraphTheory
 
