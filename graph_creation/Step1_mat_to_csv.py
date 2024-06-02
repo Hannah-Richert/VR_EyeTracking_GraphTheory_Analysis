@@ -1,6 +1,16 @@
-import os
-import matgrab # Install: https://pypi.org/project/matgrab/ Credits: https://github.com/Aaronearlerichardson/matgrab
+"""
+The script converts and saves data from .mat files to .csv files for multiple participants.
 
+Parameters:
+- savepath (str): Directory where the processed .csv files will be saved.
+- part_list (list<int>): IDs of the participants whose .mat files will be processed.
+
+Saved Results:
+- Each participant's .mat file is converted to a corresponding .csv file in the specified savepath directory.
+"""
+
+import os
+import matgrab  # Install: https://pypi.org/project/matgrab/ Credits: https://github.com/Aaronearlerichardson/matgrab
 
 def mat_to_csv(savepath, part):
     """
@@ -11,43 +21,38 @@ def mat_to_csv(savepath, part):
     - part (int): Participant ID 
 
     Returns: None
-
     """
-    # load input file
+    # Load input file
     input_file = f'{part}_gazes_data_WB.mat'
-    
     output_path = os.path.join(savepath, f'{part}_gazes_data_WB.csv')
 
     # Use matgrab module to convert .mat file to DataFrame and save it as CSV
     matgrab.mat2df(input_file).to_csv(output_path)
 
-        
-    
 
-# Adjustable variables
-savepath = 'D:/WestbrueckData/Pre-processing/' # path for the .csv files
-os.chdir('D:/WestbrueckData/Pre-processing/gazes_vs_noise/') # directory with the .mat files
+# Start of the main script
+if __name__ == "__main__": # only execute if file is called directly not as a module
 
-# 26 participants with 5x30min VR training less than 30% data loss
-part_list = [1004, 1005, 1008, 1010, 1011, 1013, 1017, 1018, 1019, 1021, 1022, 1023, 1054, 1055, 1056, 1057, 1058, 1068, 1069, 1072, 1073, 1074, 1075, 1077, 1079, 1080]
-#part_list = [1004]
+    # Adjustable variables
+    savepath = 'D:/WestbrueckData/Pre-processing/'  # Path for the .csv files
+    os.chdir('D:/WestbrueckData/Pre-processing/gazes_vs_noise/')  # Directory with the .mat files
 
-# Ensure the save directory exists
-os.makedirs(savepath, exist_ok=True)  
+    # 26 participants with 5x30min VR training less than 30% data loss
+    part_list = [
+        1004, 1005, 1008, 1010, 1011, 1013, 1017, 1018, 1019, 1021, 1022, 1023,
+        1054, 1055, 1056, 1057, 1058, 1068, 1069, 1072, 1073, 1074, 1075, 1077,
+        1079, 1080
+    ]
 
+    # Ensure the save directory exists
+    os.makedirs(savepath, exist_ok=True)  
 
-# Iterate through the list of participants
-for part in part_list:
-    
-    print(f"Processing participant {part}")
-    
-    mat_to_csv(savepath, part)
+    # Iterate through the list of participants
+    for part in part_list:
+        print(f"Processing participant {part}")
+        mat_to_csv(savepath, part)
 
-print("Finished")
-
-
-
-
+    print("Finished")
 
 
 
@@ -58,8 +63,10 @@ print("Finished")
 
 
 """
-    explicit transformation of all cols, with this one could only select a few cols instead of all
-    matgrab.mat2df(file, 
+Optional: Explicit transformation of selected columns
+
+# Example to select a all columns explicitly
+matgrab.mat2df(file, 
                         ["sampleNr",
                         "clusterDuration",
                         "timeStampDataPointStart",
@@ -108,4 +115,4 @@ print("Finished")
                         "Session",
                         "ETSession"
                         ]).to_csv(output_path)
-     """
+"""

@@ -1,0 +1,12 @@
+# Python Packages
+numpy
+pandas
+matplotlib
+seaborn
+scipy
+networkx
+statsmodels
+scikit-learn
+matgrab  # Install: https://pypi.org/project/matgrab/ Credits: https://github.com/Aaronearlerichardson/matgrab
+
+

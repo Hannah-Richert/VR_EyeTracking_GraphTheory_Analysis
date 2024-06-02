@@ -1,11 +1,11 @@
+"""
+The scripts entails the all fuctions to calculate the global graph measures/ properties used in Step3.
+There are additional functions not used, for example those for weighted graphs.
+"""
+
 import numpy as np
-import pandas as pd
 import networkx as nx
 from scipy.optimize import curve_fit
-import matplotlib.pyplot as plt
-
-######## Graph measures #########
-
 
 
 def num_of_nodes(graph):
@@ -180,7 +180,7 @@ def hierarchy_index(graph):
 
 def custom_weight(edge, edge_table):
     """
-    Calculates the weight of an edge from the edges of my undirected graph.
+    Calculates an weight of an edge from the edges of an undirected graph.
 
     The more often an edge appears in the edge-table, the smaller the weight (inverse frequency)
     Parameters:

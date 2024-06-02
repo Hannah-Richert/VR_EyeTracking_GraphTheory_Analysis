@@ -60,8 +60,7 @@ for part in part_list:
     # drop self-looping edges
     edge_table = edge_table[edge_table['orig'] != edge_table['dest']]
 
-    # drop duplicated edges (both directions a-b == b-a) 
-    # nx-undirected-graph does this implicitly automatically
+    # drop duplicated edges (both directions a-b == b-a) -> nx-undirected-graph does this implicitly automatically
     # edge_table = edge_table[~edge_table[['orig', 'dest']].apply(lambda row: frozenset(row), axis=1).duplicated(keep='first')]    
 
     # Create a undirected empty graph
@@ -81,7 +80,7 @@ for part in part_list:
     #nx.draw(graph)
     #plt.show()
     
-    # Calculate the graph measures from myGMF
+    # Calculate some graph measures from myGMF
 
     num_nodes = myGMF.num_of_nodes(graph)
     num_edges = myGMF.num_of_edges(graph)

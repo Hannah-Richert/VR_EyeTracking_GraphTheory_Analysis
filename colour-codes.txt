@@ -1,0 +1,21 @@
+Main colors used in plots:
+
+darkblue: #103F71
+teal: #179999
+darkorange: #E1A315
+lightgrey = 'lightgrey'
+purple: #6555CB
+red: #FF0000
+
+
+
+
+
+
+
+
+
+
+
+
+
